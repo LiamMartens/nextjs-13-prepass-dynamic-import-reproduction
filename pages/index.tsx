@@ -11,6 +11,7 @@ export default function Home() {
 }
 
 export const getStaticProps = async () => {
+  // @README if you comment the prepass out, the dynamic import will work againgit
   await ssrPrepass(<Home />);
   return { props: {} }
 }
